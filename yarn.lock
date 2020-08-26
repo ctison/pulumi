@@ -83,7 +83,14 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@pulumi/pulumi@2.9.0":
+"@pulumi/github@1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@pulumi/github/-/github-1.4.2.tgz#1965aebeecbff3b0c66285b500267116b539ee8d"
+  integrity sha512-+esGXemQYpZi9YiH2EHkdOY7HuNtZ3uGSOetY3D5edhwsn1c09IJkuHw9xBBArlhM8yYwxT1jD4pi8TgwKtS2g==
+  dependencies:
+    "@pulumi/pulumi" "^2.0.0"
+
+"@pulumi/pulumi@2.9.0", "@pulumi/pulumi@^2.0.0":
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.9.0.tgz#5841f10792ce65b592b170c0a67e4d8aef1a63f9"
   integrity sha512-KyknfBmwh1Wtisy6IHQ2jspvmeV/t4fFIS6bfy2zvWkmDO/Vn6FA3k1LlEJg91swswTmMdLrhwqygk3WUx+5Yw==
@@ -106,6 +113,13 @@
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@pulumi/query/-/query-0.3.0.tgz#f496608e86a18c3dd31b6c533408e2441c29071d"
   integrity sha512-xfo+yLRM2zVjVEA4p23IjQWzyWl1ZhWOGobsBqRpIarzLvwNH/RAGaoehdxlhx4X92302DrpdIFgTICMN4P38w==
+
+"@pulumi/terraform@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/terraform/-/terraform-2.5.0.tgz#9296acd10b917663d7392f17d524ce5924023d3b"
+  integrity sha512-D0yevPuQdfZU4QdwBCL7Q1/BnH8oKBsgUarWsg2Q2n7l7sEW1Dh+ra4PuLpSfUnJivaqlNkp6BjmMD9zfc5oAQ==
+  dependencies:
+    "@pulumi/pulumi" "^2.0.0"
 
 "@types/color-name@^1.1.1":
   version "1.1.1"

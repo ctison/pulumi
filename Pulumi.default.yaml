@@ -1,0 +1,7 @@
+config:
+  terraform:organization:
+    secure: AAABAI1SrwOHqx1teNSb5WDFPBK8SjQVzgivDCf7IslZN2LjEqg=
+  terraform:token:
+    secure: AAABAJsJv+EqEEGbeTQIwjpuT/CHo/8h7NWrYCMW6W0JPZSL4NRCQlf4ZnLq+jsw/i8fJN8WjlhdDkc0U+r9PUrvSROQg76dEWBVuwzhNpKgTdHatYyY/OKkeAIVp5Idh/cE83qW7TkCNjj73RsQFMYoAdhAn71DU6g=
+  terraform:workspace:
+    secure: AAABAHOdMamQE3HbQwWKhUimUCa5MV/V6te5MXTScZXnVH/j5qQgj60=
