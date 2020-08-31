@@ -83,10 +83,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@pulumi/pulumi@2.9.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.9.0.tgz#5841f10792ce65b592b170c0a67e4d8aef1a63f9"
-  integrity sha512-KyknfBmwh1Wtisy6IHQ2jspvmeV/t4fFIS6bfy2zvWkmDO/Vn6FA3k1LlEJg91swswTmMdLrhwqygk3WUx+5Yw==
+"@pulumi/pulumi@2.9.2":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.9.2.tgz#824287a69712832297c4d4566264cb7d8e9e4156"
+  integrity sha512-tN1hFrxMiZ/Jtcrb3j899pXzdHPS7j1/3XRdJ0z9HDDvbkNvYbhYRS0CASqywEF93EiKqUWyomzwG33s4hinsQ==
   dependencies:
     "@grpc/grpc-js" "^0.6.15"
     "@pulumi/query" "^0.3.0"
