@@ -14,8 +14,8 @@ const terraformState = new terraform.state.RemoteStateReference('terraform', {
 
 new Github('github', {
   staging: {
-    kubeconfig: terraformState.getOutput('production_kubeconfig').get() as string,
-    k8sIP: terraformState.getOutput('production_k8s_ip').get() as string,
-    postgresURL: terraformState.getOutput('production_postgres_url').get() as string,
+    kubeconfig: terraformState.getOutput('production_kubeconfig'),
+    k8sIP: terraformState.getOutput('production_k8s_ip'),
+    postgresURL: terraformState.getOutput('production_postgres_url'),
   },
 })

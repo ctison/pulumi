@@ -1,4 +1,7 @@
 config:
+  github:organization: k7o-io
+  github:token:
+    secure: AAABAHXSXha+2jBRr3bneI+txstloSwYsdu2zmdTRFuohciOmphXVZdLq7O1eR7DRmbJfv5imnT6uuafXcWUBEWe3MKsiSkS
   terraform:organization:
     secure: AAABAI1SrwOHqx1teNSb5WDFPBK8SjQVzgivDCf7IslZN2LjEqg=
   terraform:token:
