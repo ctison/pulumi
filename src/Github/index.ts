@@ -1,16 +1,22 @@
 import * as pulumi from '@pulumi/pulumi'
-import * as github from '@pulumi/github'
+import { Repository } from './Repository'
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface GithubArgs {}
+interface Environment {
+  kubeconfig: string
+  postgresURL: string
+  k8sIP: string
+}
+
+interface GithubArgs {
+  staging: Environment
+  // production: Environment
+}
 
 export class Github extends pulumi.ComponentResource {
-  constructor(name: string, args?: GithubArgs, opts?: pulumi.ComponentResourceOptions) {
+  constructor(name: string, args: GithubArgs, opts?: pulumi.ComponentResourceOptions) {
     super('github', name, {}, opts)
-    new github.ActionsSecret('test', {
-      secretName: 'TEST',
-      repository: 'ctison/hasura',
-      plaintextValue: 'xxx',
-    })
+
+    const hasura = new Repository('hasura')
+    hasura.createActionSecret('K8S_STAGING', args.staging.kubeconfig)
   }
 }

@@ -12,7 +12,10 @@ const terraformState = new terraform.state.RemoteStateReference('terraform', {
   },
 })
 
-new Github('github')
-
-// pulumi.secret(terraformState.getOutput('production_kubeconfig'))
-// pulumi.secret(terraformState.getOutput('production_postgres_url'))
+new Github('github', {
+  staging: {
+    kubeconfig: terraformState.getOutput('production_kubeconfig').get() as string,
+    k8sIP: terraformState.getOutput('production_k8s_ip').get() as string,
+    postgresURL: terraformState.getOutput('production_postgres_url').get() as string,
+  },
+})
