@@ -11,7 +11,7 @@ export class Repository extends pulumi.ComponentResource {
     this.name = name
   }
 
-  createActionSecret(name: string, secret: string): void {
+  createActionSecret(name: string, secret: pulumi.Input<string>): void {
     new github.ActionsSecret(
       name,
       {
